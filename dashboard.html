@@ -1,0 +1,32 @@
+
+
+// بررسی وضعیت ورود در داشبورد
+if (window.location.pathname.includes("dashboard.html")) {
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
+  if (!isLoggedIn) {
+    alert("لطفاً ابتدا وارد حساب کاربری شوید.");
+    window.location.href = "register.html";
+  }
+}
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>داشبورد</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h2>داشبورد من</h2></header>
+  <section class="dashboard">
+    <p>فایل‌های دانلود شده</p>
+    <ul>
+      <li>ریاضی پایه هشتم</li>
+      <li>آزمون نهایی علوم</li>
+    </ul>
+    <p>علاقه‌مندی‌ها</p>
+    <ul>
+      <li>جزوه فارسی</li>
+    </ul>
+  </section>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>ثبت‌نام</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form");
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    localStorage.setItem("isLoggedIn", "true");
+    alert("ثبت‌نام موفق بود!");
+    window.location.href = "dashboard.html";
+  });
+});
+<body>
+  <header><h2>ثبت‌نام در کنز</h2></header>
+  <form class="form-box">
+    <label>نام کامل:</label>
+    <input type="text" required>
+    <label>پایه تحصیلی:</label>
+    <select required>
+      <option>هفتم</option>
+      <option>هشتم</option>
+      <option>نهم</option>
+    </select>
+    <label>ایمیل:</label>
+    <input type="email" required>
+    <label>رمز عبور:</label>
+    <input type="password" required>
+    <button type="submit">ثبت‌نام</button>
+  </form>
+</body>
+</html>

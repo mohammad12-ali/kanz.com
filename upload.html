@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>ارسال فایل</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h2>ارسال فایل آموزشی</h2></header>
+  <form class="form-box" enctype="multipart/form-data">
+    <label>عنوان فایل:</label>
+    <input type="text" required>
+    <label>پایه تحصیلی:</label>
+    <select required>
+      <option>هفتم</option>
+      <option>هشتم</option>
+      <option>نهم</option>
+    </select>
+    <label>نوع فایل:</label>
+    <select required>
+      <option>جزوه</option>
+      <option>آزمون</option>
+      <option>پاسخ‌نامه</option>
+    </select>
+    <label>آپلود فایل:</label>
+    <input type="file" required>
+    <button type="submit">ارسال</button>
+  </form>
+</body>
+</html>
